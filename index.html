@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+        <head>
+       
+                <meta charset="UTF-8">
+                <title> Događaj nad listom elemenata</title>
+               
+            <style>
+
+                body {
+                    background:#777777;
+                }
+               
+                #mojGrad {
+                    margin-left:250px;
+                    width:700px;
+                    height:180px;
+                    font-size:150px;
+                    text-align:center;
+                               
+                }
+                       
+            </style>
+ 
+               
+        </head>
+       
+        <body>
+
+            <p><b> Izaberi opciju iz padajuceg menija:</b></p>
+               
+                <select id="select" onchange="Grad(this);" >
+                        <option></option>
+                        <option>Sarajevo</option>
+                        <option>Mostar</option>
+                        <option>Bihać</option>
+                        <option>Banja luka</option>
+                        <option>Visoko</option>
+                        <option>Goražde</option>
+                        <option>Bijeljina</option>
+                </select>
+
+             <script>
+               
+                function Grad() {    
+                                 
+                    var izbor=document.getElementById("select").value;
+                    var div=document.getElementById("mojGrad");
+                            div.innerHTML=izbor;
+                }
+ 
+            </script>
+
+            <div id="mojGrad"></div>
+
+    </body>
+</html>
